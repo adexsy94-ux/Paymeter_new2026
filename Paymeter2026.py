@@ -111,7 +111,7 @@ def normalize_acct(x: Optional[str]) -> str:
 def calculate_commission(x) -> float:
     try:
         v = float(x)
-        return 100000.0 if v >= 4_000_000 else v * 0.025
+        return 5000.0 if v >= 166_667 else v * 0.03
     except Exception:
         return 0.0
 
